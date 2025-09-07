@@ -4,6 +4,12 @@ type: about
 comments: false
 ---
 
+<img
+  src="https://avatars.githubusercontent.com/u/230812001"
+  alt="avatar"
+  width="250"
+/>
+
 ## 团队名称
 
 后续再填
