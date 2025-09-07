@@ -18,15 +18,18 @@ markup:
 
 menu:
   main:
-    - name: About
+    - name: 关于
       pageRef: /about
       weight: 1
-    - name: Search
+    - name: 评论
+      pageRef: /comments
       weight: 2
+    - name: 搜索
+      weight: 3
       params:
         type: search
     - name: GitHub
-      weight: 3
+      weight: 4
       url: "https://github.com/Labor-Practice/"
       params:
         icon: github
@@ -60,4 +63,4 @@ params:
       theme: preferred_color_scheme
       lang: en
       crossorigin: anonymous
-      async: true
+      async: false
