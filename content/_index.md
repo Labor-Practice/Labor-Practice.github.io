@@ -1,12 +1,8 @@
 ---
-title: Labor Practice
+title: 项目名称后续再填
 toc: false
 comments: false
 ---
-
-## 项目名称
-
-后续再填
 
 ## 项目介绍
 
