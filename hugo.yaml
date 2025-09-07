@@ -54,3 +54,21 @@ params:
   editURL:
     enable: true
     base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+
+  comments:
+    enable: true
+    type: giscus
+    giscus:
+      repo: Labor-Practice/Labor-Practice.github.io
+      repoId: R_kgDOPrPs-A
+      category: Announcements
+      categoryId: DIC_kwDOPrPs-M4CvFTV
+      mapping: pathname
+      strict: false
+      reactionsEnabled: true
+      emitMetadata: false
+      inputPosition: bottom
+      theme: preferred_color_scheme
+      lang: en
+      crossorigin: anonymous
+      async: true
