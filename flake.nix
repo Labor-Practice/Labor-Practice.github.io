@@ -9,7 +9,7 @@
       pkgs = import nixpkgs { inherit system; };
     in {
       devShells.${system}.default = pkgs.mkShell {
-        buildInputs = with pkgs; [ nodejs hugo ];
+        buildInputs = with pkgs; [ nodejs hugo go ];
 
         shellHook = ''
           echo "Nix dev shell"
