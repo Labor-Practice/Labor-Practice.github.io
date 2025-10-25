@@ -5,3 +5,7 @@ resources/
 
 # Editor
 .vscode/
+
+# direnv
+.envrc
+.direnv/
