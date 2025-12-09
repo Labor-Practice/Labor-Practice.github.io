@@ -288,7 +288,7 @@ comments: false
 
   @media (prefers-color-scheme: dark) {
     .title {
-      color: #e5e5e5;
+      color: #3b3430;
     }
   }
 
