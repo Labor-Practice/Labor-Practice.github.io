@@ -341,7 +341,7 @@
 
 <div class="envelope-container">
   <div class="envelope-list">
-    <a href="https://example.com/article1" class="envelope" tabindex="0">
+    <a href="https://example.com/article1" class="envelope open" tabindex="0">
       <div class="env-body"></div>
       <div class="env-flap"></div>
       <article class="letter">
@@ -360,7 +360,7 @@
         </div>
       </article>
     </a>
-    <a href="https://example.com/article2" class="envelope" tabindex="0">
+    <a href="https://example.com/article2" class="envelope open" tabindex="0">
       <div class="env-body"></div>
       <div class="env-flap"></div>
       <article class="letter">
@@ -379,7 +379,7 @@
         </div>
       </article>
     </a>
-    <a href="https://example.com/article3" class="envelope" tabindex="0">
+    <a href="https://example.com/article3" class="envelope open" tabindex="0">
       <div class="env-body"></div>
       <div class="env-flap"></div>
       <article class="letter">
@@ -398,7 +398,7 @@
         </div>
       </article>
     </a>
-    <a href="https://example.com/article4" class="envelope" tabindex="0">
+    <a href="https://example.com/article4" class="envelope open" tabindex="0">
       <div class="env-body"></div>
       <div class="env-flap"></div>
       <article class="letter">
@@ -417,7 +417,7 @@
         </div>
       </article>
     </a>
-    <a href="https://example.com/article5" class="envelope" tabindex="0">
+    <a href="https://example.com/article5" class="envelope open" tabindex="0">
       <div class="env-body"></div>
       <div class="env-flap"></div>
       <article class="letter">
@@ -436,7 +436,7 @@
         </div>
       </article>
     </a>
-    <a href="https://example.com/article6" class="envelope" tabindex="0">
+    <a href="https://example.com/article6" class="envelope open" tabindex="0">
       <div class="env-body"></div>
       <div class="env-flap"></div>
       <article class="letter">
@@ -455,7 +455,7 @@
         </div>
       </article>
     </a>
-    <a href="https://example.com/article7" class="envelope" tabindex="0">
+    <a href="https://example.com/article7" class="envelope open" tabindex="0">
       <div class="env-body"></div>
       <div class="env-flap"></div>
       <article class="letter">
@@ -502,12 +502,16 @@
       window.addEventListener('resize', updateDimensions);
 
       envelope.setAttribute('role', 'button');
-      envelope.setAttribute('aria-expanded', 'false');
+      const syncExpanded = function () {
+        const isOpen = envelope.classList.contains('open');
+        envelope.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      };
+      syncExpanded();
 
       const toggleOpen = function () {
         updateDimensions();
-        const isOpen = envelope.classList.toggle('open');
-        envelope.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        envelope.classList.toggle('open');
+        syncExpanded();
       };
 
       envelope.addEventListener('click', function (event) {
