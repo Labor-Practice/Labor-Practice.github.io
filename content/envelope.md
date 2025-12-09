@@ -487,6 +487,17 @@
         return;
       }
 
+      const avatar = envelope.querySelector('.avatar');
+      const author = envelope.querySelector('.by');
+      if (avatar && author) {
+        const rawText = author.textContent.trim();
+        const match = rawText.match(/[:：]\s*(.+)$/);
+        const name = (match ? match[1] : rawText).trim();
+        const initial = name.charAt(0) || avatar.textContent.trim().charAt(0) || '?';
+        avatar.textContent = initial;
+        avatar.setAttribute('aria-label', name ? `作者 ${name}` : '作者');
+      }
+
       const updateDimensions = function () {
         const letterStyles = window.getComputedStyle(letter);
         const topOffset = parseFloat(letterStyles.top) || 0;
