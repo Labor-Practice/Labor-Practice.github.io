@@ -31,3 +31,8 @@ comments: false
   - 物料零成本：主要原材料来自捐赠，几乎无成本。
   - 趣味性与教育性并存:动手创意环节能极大调动学生兴趣，环保主题具有深刻教育意义。
   - 安全注意事项：需注意工具（如针、剪刀、缝纫机）的安全使用和衣物的清洁卫生。
+
+## 产品介绍
+
+![badminton_1](assets/product/badminton_1.jpg)
+![badminton_2](assets/product/badminton_2.jpg)
