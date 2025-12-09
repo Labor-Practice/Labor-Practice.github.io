@@ -2,9 +2,9 @@
 
 <style>
   :root{
-    --env-width: 420px;
-    --env-height: 240px;
-    --env-open-height: 420px;
+    --env-width: 520px;
+    --env-height: 280px;
+    --env-open-height: 480px;
     --paper-color: #fffdf7;
     --env-color: #e6a07a;
     --shadow: 0 8px 20px rgba(0,0,0,0.18);
@@ -84,13 +84,13 @@
     margin: 0;
     /* background: linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%); */
     background: transparent;
-    padding: 60px 24px;
+    padding: 140px 24px 80px;
   }
 
   .envelope-list {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 120px;
     width: 100%;
     max-width: 800px;
     align-items: center;
