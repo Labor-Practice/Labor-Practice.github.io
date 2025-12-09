@@ -352,7 +352,7 @@ comments: false
         <div class="meta">
           <div class="avatar">A</div>
           <div class="info">
-            <div class="by">作者：张三</div>
+            <div class="by">作者：爆米花</div>
             <div class="date">2025-12-10</div>
           </div>
         </div>
@@ -371,7 +371,7 @@ comments: false
         <div class="meta">
           <div class="avatar">B</div>
           <div class="info">
-            <div class="by">作者：李四</div>
+            <div class="by">作者：橘子汽水</div>
             <div class="date">2025-11-28</div>
           </div>
         </div>
@@ -390,7 +390,7 @@ comments: false
         <div class="meta">
           <div class="avatar">C</div>
           <div class="info">
-            <div class="by">作者：王五</div>
+            <div class="by">作者：雪糕筒</div>
             <div class="date">2025-12-05</div>
           </div>
         </div>
@@ -409,7 +409,7 @@ comments: false
         <div class="meta">
           <div class="avatar">D</div>
           <div class="info">
-            <div class="by">作者：赵六</div>
+            <div class="by">作者：夜行侠</div>
             <div class="date">2025-11-15</div>
           </div>
         </div>
@@ -428,7 +428,7 @@ comments: false
         <div class="meta">
           <div class="avatar">E</div>
           <div class="info">
-            <div class="by">作者：孙七</div>
+            <div class="by">作者：星星糖</div>
             <div class="date">2025-12-01</div>
           </div>
         </div>
@@ -447,7 +447,7 @@ comments: false
         <div class="meta">
           <div class="avatar">F</div>
           <div class="info">
-            <div class="by">作者：周八</div>
+            <div class="by">作者：风筝手</div>
             <div class="date">2025-11-20</div>
           </div>
         </div>
@@ -466,7 +466,7 @@ comments: false
         <div class="meta">
           <div class="avatar">G</div>
           <div class="info">
-            <div class="by">作者：吴九</div>
+            <div class="by">作者：音浪客</div>
             <div class="date">2025-12-08</div>
           </div>
         </div>
