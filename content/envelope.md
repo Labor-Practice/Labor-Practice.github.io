@@ -353,14 +353,14 @@ comments: false
           <div class="avatar">A</div>
           <div class="info">
             <div class="by">作者：爆米花</div>
-            <div class="date">2025-12-10</div>
+            <div class="date">2025-12-09</div>
           </div>
         </div>
-        <h1 class="title">探索前端新技术</h1>
-        <p class="excerpt">本文深入探讨了现代前端开发的最新技术趋势，包括性能优化、用户体验提升等多个方面的实践经验。</p>
+        <h1 class="title">“旧物新生”让衣柜轻松又环保</h1>
+        <p class="excerpt">把压在角落的卫衣拆开重新拼缝，是在“旧物新生”里学会的第一件事。谢谢项目组的耐心教学，让我意识到衣柜不是要更满，而是要被认真对待。</p>
         <div class="tags">
-          <span class="tag">前端</span>
-          <span class="tag">技术</span>
+          <span class="tag">旧物新生</span>
+          <span class="tag">环保</span>
         </div>
       </article>
     </a>
@@ -372,14 +372,14 @@ comments: false
           <div class="avatar">B</div>
           <div class="info">
             <div class="by">作者：橘子汽水</div>
-            <div class="date">2025-11-28</div>
+            <div class="date">2025-12-06</div>
           </div>
         </div>
-        <h1 class="title">设计系统的构建之道</h1>
-        <p class="excerpt">如何从零开始构建一个完整的设计系统？这篇文章分享了团队在实践中总结的经验，涵盖组件设计、文档规范、协作流程等核心要素。</p>
+        <h1 class="title">第一次缝纫也能完成心意</h1>
+        <p class="excerpt">活动里的“技能学习”环节救了我这个手残党。按照老师给的创意指南缝了个杯垫，送给舍友时她说比买的更有温度，真的很开心。</p>
         <div class="tags">
-          <span class="tag">设计</span>
-          <span class="tag">系统</span>
+          <span class="tag">缝纫</span>
+          <span class="tag">心意礼物</span>
         </div>
       </article>
     </a>
@@ -391,14 +391,14 @@ comments: false
           <div class="avatar">C</div>
           <div class="info">
             <div class="by">作者：雪糕筒</div>
-            <div class="date">2025-12-05</div>
+            <div class="date">2025-12-03</div>
           </div>
         </div>
-        <h1 class="title">CSS动画的艺术</h1>
-        <p class="excerpt">动画让网页更加生动有趣。本文通过实例讲解如何创造流畅自然的CSS动画效果。</p>
+        <h1 class="title">扎染课堂点燃社团活力</h1>
+        <p class="excerpt">我们社团接下“旧物新生”任务后，大家都跑来扎染旧T恤。看着蓝紫交织的颜色慢慢浮现，我才懂得动手创造的乐趣。</p>
         <div class="tags">
-          <span class="tag">CSS</span>
-          <span class="tag">动画</span>
+          <span class="tag">扎染</span>
+          <span class="tag">社团</span>
         </div>
       </article>
     </a>
@@ -410,14 +410,14 @@ comments: false
           <div class="avatar">D</div>
           <div class="info">
             <div class="by">作者：夜行侠</div>
-            <div class="date">2025-11-15</div>
+            <div class="date">2025-11-30</div>
           </div>
         </div>
-        <h1 class="title">TypeScript最佳实践</h1>
-        <p class="excerpt">TypeScript已成为大型项目的首选。文章总结了类型定义、泛型使用、编译配置等方面的最佳实践，帮助开发者写出更安全的代码。</p>
+        <h1 class="title">义卖现场的每一双眼睛</h1>
+        <p class="excerpt">展览义卖那天，我负责给经过的同学讲解旧衣改造的故事。看他们摸到布料时露出的惊喜，我第一次觉得自己讲述的环保理念被好好听见了。</p>
         <div class="tags">
-          <span class="tag">TypeScript</span>
-          <span class="tag">编程</span>
+          <span class="tag">义卖</span>
+          <span class="tag">传播</span>
         </div>
       </article>
     </a>
@@ -429,14 +429,14 @@ comments: false
           <div class="avatar">E</div>
           <div class="info">
             <div class="by">作者：星星糖</div>
-            <div class="date">2025-12-01</div>
+            <div class="date">2025-11-26</div>
           </div>
         </div>
-        <h1 class="title">响应式设计精要</h1>
-        <p class="excerpt">在多设备时代，响应式设计至关重要。深入讲解媒体查询、弹性布局、视口单位的实战应用。</p>
+        <h1 class="title">宿舍里的可持续挑战</h1>
+        <p class="excerpt">项目鼓励我们记录衣物改造日志，我干脆发动全宿舍一起参加。一边打磨针线活、一边聊消费观，原来环保也能这么好玩。</p>
         <div class="tags">
-          <span class="tag">响应式</span>
-          <span class="tag">布局</span>
+          <span class="tag">宿舍</span>
+          <span class="tag">可持续</span>
         </div>
       </article>
     </a>
@@ -448,14 +448,14 @@ comments: false
           <div class="avatar">F</div>
           <div class="info">
             <div class="by">作者：风筝手</div>
-            <div class="date">2025-11-20</div>
+            <div class="date">2025-11-22</div>
           </div>
         </div>
-        <h1 class="title">性能优化实战指南</h1>
-        <p class="excerpt">网站性能直接影响用户体验和转化率。本文分享代码分割、懒加载、缓存策略等实用技巧，帮助你的应用快如闪电。</p>
+        <h1 class="title">技能与公益的双成长</h1>
+        <p class="excerpt">主持工作坊时我负责教大家用旧牛仔布做手机包，没想到最后孩子们把作品捐去义卖。我在指导别人时，也重新审视了自己对“劳动教育”的理解。</p>
         <div class="tags">
-          <span class="tag">性能</span>
-          <span class="tag">优化</span>
+          <span class="tag">工作坊</span>
+          <span class="tag">公益</span>
         </div>
       </article>
     </a>
@@ -467,14 +467,14 @@ comments: false
           <div class="avatar">G</div>
           <div class="info">
             <div class="by">作者：音浪客</div>
-            <div class="date">2025-12-08</div>
+            <div class="date">2025-11-18</div>
           </div>
         </div>
-        <h1 class="title">React Hooks深度解析</h1>
-        <p class="excerpt">Hooks改变了React的开发方式。从useState到useEffect，从自定义Hook到性能优化，全面掌握Hooks的使用技巧。</p>
+        <h1 class="title">记录下劳动的闪光瞬间</h1>
+        <p class="excerpt">我负责把“旧物新生”全过程拍成短片，每次剪辑都被同伴的笑声打动。谢谢大家愿意在镜头前分享失败与灵感，让可持续理念真的被看见。</p>
         <div class="tags">
-          <span class="tag">React</span>
-          <span class="tag">Hooks</span>
+          <span class="tag">记录</span>
+          <span class="tag">短片</span>
         </div>
       </article>
     </a>
