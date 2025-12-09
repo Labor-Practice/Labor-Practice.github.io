@@ -229,21 +229,21 @@
     }
   }
 
-  .envelope:hover .env-flap,
-  .envelope:focus-within .env-flap{
+  .envelope.open .env-flap,
+  .envelope.open:focus-within .env-flap{
     transform: rotateX(-180deg);
     box-shadow: 0 -20px 40px rgba(0,0,0,0.12);
   }
 
   @media (prefers-color-scheme: dark) {
-    .envelope:hover .env-flap,
-    .envelope:focus-within .env-flap{
+    .envelope.open .env-flap,
+    .envelope.open:focus-within .env-flap{
       box-shadow: 0 -20px 40px rgba(0,0,0,0.5);
     }
   }
 
-  .envelope:hover .letter,
-  .envelope:focus-within .letter{
+  .envelope.open .letter,
+  .envelope.open:focus-within .letter{
     opacity: 1;
     max-height: 1000px;
     transform: translateY(0%);
@@ -508,3 +508,31 @@
     </a>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const envelopes = document.querySelectorAll('.envelope');
+
+    envelopes.forEach(function (envelope) {
+      envelope.setAttribute('role', 'button');
+      envelope.setAttribute('aria-expanded', 'false');
+
+      const toggleOpen = function () {
+        const isOpen = envelope.classList.toggle('open');
+        envelope.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      };
+
+      envelope.addEventListener('click', function (event) {
+        event.preventDefault();
+        toggleOpen();
+      });
+
+      envelope.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          toggleOpen();
+        }
+      });
+    });
+  });
+</script>
