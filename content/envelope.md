@@ -1,4 +1,8 @@
-# 来自用户的感谢信
+---
+title: 来自用户的感谢信
+toc: false
+comments: false
+---
 
 <style>
   :root{
