@@ -2,8 +2,9 @@
 
 <style>
   :root{
-    --env-width: 340px;
-    --env-height: 200px;
+    --env-width: 420px;
+    --env-height: 240px;
+    --env-open-height: 420px;
     --paper-color: #fffdf7;
     --env-color: #e6a07a;
     --shadow: 0 8px 20px rgba(0,0,0,0.18);
@@ -89,53 +90,10 @@
   .envelope-list {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
     width: 100%;
     max-width: 800px;
     align-items: center;
-  }
-
-  /* 竖向排列的交错效果 */
-  .envelope:nth-child(3n+1) {
-    align-self: flex-start;
-    margin-left: 10%;
-  }
-  
-  .envelope:nth-child(3n+2) {
-    align-self: center;
-  }
-  
-  .envelope:nth-child(3n+3) {
-    align-self: flex-end;
-    margin-right: 10%;
-  }
-
-  @media (max-width: 768px) {
-    .envelope-list {
-      gap: 80px;
-    }
-    
-    .envelope:nth-child(3n+1) {
-      margin-left: 5%;
-    }
-    
-    .envelope:nth-child(3n+3) {
-      margin-right: 5%;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .envelope-list {
-      gap: 60px;
-    }
-    
-    .envelope:nth-child(3n+1),
-    .envelope:nth-child(3n+2),
-    .envelope:nth-child(3n+3) {
-      align-self: center;
-      margin-left: 0;
-      margin-right: 0;
-    }
   }
 
   .envelope{
@@ -147,7 +105,8 @@
     cursor: pointer;
     display: block;
     text-decoration: none;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, min-height 0.3s ease;
+    margin: 0 auto;
   }
 
   .envelope:hover {
@@ -163,6 +122,7 @@
     position: relative;
     overflow: visible;
     padding-bottom: 18%;
+    transition: min-height 0.3s ease;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -210,11 +170,11 @@
 
   .letter{
     position: absolute;
-    inset: 15% 6% 6% 6%;
+    inset: 32px 28px 26px 28px;
     background: var(--paper-color);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-    padding: 18px 18px 16px;
+    padding: 22px 22px 20px;
     z-index: 2;
     transform: translateY(8%);
     opacity: 0;
@@ -227,6 +187,14 @@
     .letter {
       box-shadow: 0 6px 16px rgba(0,0,0,0.6);
     }
+  }
+
+  .envelope.open{
+    min-height: var(--env-open-height);
+  }
+
+  .envelope.open .env-body{
+    min-height: var(--env-open-height);
   }
 
   .envelope.open .env-flap,
@@ -245,7 +213,7 @@
   .envelope.open .letter,
   .envelope.open:focus-within .letter{
     opacity: 1;
-    max-height: 1000px;
+    max-height: var(--letter-open-height, 1000px);
     transform: translateY(0%);
   }
 
@@ -514,10 +482,30 @@
     const envelopes = document.querySelectorAll('.envelope');
 
     envelopes.forEach(function (envelope) {
+      const letter = envelope.querySelector('.letter');
+      if (!letter) {
+        return;
+      }
+
+      const updateDimensions = function () {
+        const letterStyles = window.getComputedStyle(letter);
+        const topOffset = parseFloat(letterStyles.top) || 0;
+        const bottomOffset = parseFloat(letterStyles.bottom) || 0;
+        const contentHeight = letter.scrollHeight;
+        const openHeight = contentHeight + topOffset + bottomOffset;
+
+        envelope.style.setProperty('--env-open-height', `${Math.ceil(openHeight)}px`);
+        letter.style.setProperty('--letter-open-height', `${Math.ceil(contentHeight)}px`);
+      };
+
+      updateDimensions();
+      window.addEventListener('resize', updateDimensions);
+
       envelope.setAttribute('role', 'button');
       envelope.setAttribute('aria-expanded', 'false');
 
       const toggleOpen = function () {
+        updateDimensions();
         const isOpen = envelope.classList.toggle('open');
         envelope.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       };
