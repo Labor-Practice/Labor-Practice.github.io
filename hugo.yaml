@@ -21,9 +21,12 @@ menu:
     - name: 关于
       pageRef: /about
       weight: 1
+    - name: 产品介绍
+      pageRef: /product
+      weight: 2
     - name: 评论
       pageRef: /comments
-      weight: 2
+      weight: 3
     - name: 感谢信
       pageRef: /envelope
       weight: 4
